@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyNote</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- membuat container sebagai tempat penyimpanan form -->
+    <div class="container">
+
+      <!-- membuat Pernyataan diatas Input Data -->
+      <p id="question">Buat List Kamu !</p>
+
+      <!-- membuat form yang memiliki id -->
+      <input type="text" placeholder="type here" id="inputData"/>
+
+      <!-- membuat tombol untuk menginput list -->
+      <div>
+      <button onclick="addItems()">Add Lists</button>
+      <button onclick="deleteItems()">Delete List</button>
+        </div>
+      <!-- hasil Jawaban -->
+      <ul id="list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
